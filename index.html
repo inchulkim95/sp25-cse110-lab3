@@ -25,7 +25,7 @@
         </ul>
         <hr>
         <h2>Agenda</h2>
-        <ol>
+        <div class=""agenda" id="agenda">
             <li>Scriblio game</li>
             <li>Plan branding</li>
             <ul>
@@ -41,13 +41,12 @@
             <ul>
                 <li>Fill out names, values, and quotes</li>
             </ul>
-        </ol>
+        </div>  
         <hr>
-        <h3><div>Accomplished</div></h3>
+        <h3>Accomplished</h3>
         <p><strong>We began and completed all tasts on the agenda!</strong></p>
         <a href="https://github.com/cse110-sp25-group27">Team 27 repo</a>
-        <br /><image src="screenshots/powellrangerslogo_720.png" alt="team bonding" width="500" height="300" />
-        </image>
+        <br /><img src="screenshots/powellrangerslogo_720.png" alt="team bonding" width="500" height="300" />
         <video width="500" height="300" controls>
             <source src="introvid.MOV" type="video/mp4">
         </video>
@@ -55,10 +54,10 @@
         <details>
             <summary>Click me</summary>
             Thanks
-          </details>
+        </details>
         <hr>
         <h4><em>Forms Section</em></h4>
-        <form action="" method="get" class="form-example">
+        <form action="pick" method="get" class="form-example">
             <div class="form-example">
               <label for="name">Enter your name: </label>
               <input type="text" name="name" id="name" required />
@@ -68,7 +67,7 @@
             </div>
             <textarea id="story" name="push me buttons m8" rows="5" cols="100">
                 write something here if you so please
-                </textarea>
+            </textarea>
             <br />
             <label for="ice-cream-choice">did you like the video</label>
             <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
@@ -82,10 +81,11 @@
             
             <fieldset>
                 <legend>Did you like the button</legend>
-                <select name="button" id="button">
-                    <option value="yes">Yes</option>
-            </fieldset>
-          </form>
+                <div>
+                    <input type="radio" id="button-yes" name="button" value="yes" />
+                    <label for="button-yes">Yes</label>
+                </div>
+                </fieldset>
+            </form>
         </body>
-
 </html>
