@@ -72,7 +72,7 @@ h2 {
     position: relative;
     display: flex;
     flex-direction: column;
-    flex-grow: static;
+    flex-grow: 1;
     text-align: center;
     border-style: solid;
     border-color: blue;
@@ -94,7 +94,6 @@ h2 {
 /*the font controller*/
 .roboto-flex-name {
     font-family: "Roboto Flex", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
     font-variation-settings:
