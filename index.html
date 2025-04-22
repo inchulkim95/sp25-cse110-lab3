@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="mystyle.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" sizes="16x16" href="screenshots/favicon-16x16.png">
         <title>Inchul lab2 part 1</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
       </head>
       <body>
         <h1><b>Meeting 1: Apr 11, 2025</b></h1>
@@ -46,21 +50,23 @@
             </li>
         </ul>
         <hr>
-        <h3>Accomplished</h3>
-        <p><strong>We began and completed all tasts on the agenda!</strong></p>
-        <a href="https://github.com/cse110-sp25-group27">Team 27 repo</a>
-        <br /><img src="screenshots/powellrangerslogo_720.png" alt="team bonding" width="500" height="300" />
-        <video width="500" height="300" controls>
-            <source src="introvid.MOV" type="video/mp4">
-        </video>
+        <h2>Accomplished</h2>
+        <div class="accomp-grid">
+            <p><strong>We began and completed all tasks on the agenda!</strong></p>
+            <a href="https://github.com/cse110-sp25-group27" class="repolink">Team 27 repo</a>
+            <img class="logo" src="screenshots/powellrangerslogo_720.png" alt="team bonding" width="500" height="300" />
+            <video class="introvid" width="500" height="300" controls>
+                <source src="introvid.MOV" type="video/mp4">
+            </video>
+        </div>
         <hr>
         <details>
             <summary>Click me</summary>
             Thanks
         </details>
         <hr>
-        <h4><em>Forms Section</em></h4>
-        <form action="pick" method="get" class="form-example">
+        <h2><em>Forms Section</em></h2>
+        <form action="pick" method="get" class="forms">
             <div class="form-example">
               <label for="name">Enter your name: </label>
               <input type="text" name="name" id="name" required />
